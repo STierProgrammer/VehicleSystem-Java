@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Car car = new Car(
                 12,
-                "red",
+                "Red",
                 "Tesla",
                 1999
         );

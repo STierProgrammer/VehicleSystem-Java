@@ -1,6 +1,7 @@
 package Vehicles;
 
 public class Car extends Vehicle {
+
     final int year;
 
     public Car(double speed, String color, String model, int year) {
@@ -10,7 +11,6 @@ public class Car extends Vehicle {
 
     @Override
     public void displayInfo() {
-        super.displayInfo();
-        System.out.println(" Year: " + year);
+        System.out.println("Type: " + type + " Speed: " + speed + " Color: " + color + " Model: " + model + " Year: " + year);
     }
 }

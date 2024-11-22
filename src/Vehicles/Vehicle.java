@@ -1,16 +1,16 @@
 package Vehicles;
-
 enum VehicleType {
     CAR,
     TRUCK,
     MOTORCYCLE
 }
 
-public class Vehicle {
-    VehicleType type;
-    double speed;
-    String color;
+public abstract class Vehicle {
     final String model;
+    double speed;
+    VehicleType type;
+    String color;
+
 
     Vehicle(VehicleType type, double speed, String color, String model) {
         this.type = type;
@@ -19,7 +19,5 @@ public class Vehicle {
         this.model = model;
     }
 
-    public void displayInfo() {
-        System.out.println("Type: " + type + " Speed: " + speed + " Color: " + color + " Model: " + model);
-    }
+    public abstract void displayInfo();
 }
