@@ -1,5 +1,14 @@
+import Vehicles.Car;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Car car = new Car(
+                12,
+                "red",
+                "Tesla",
+                1999
+        );
+
+        car.displayInfo();
     }
 }
