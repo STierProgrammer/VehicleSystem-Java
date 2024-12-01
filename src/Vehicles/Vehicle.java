@@ -6,18 +6,19 @@ enum VehicleType {
 }
 
 public abstract class Vehicle {
-    final String model;
-    double speed;
-    VehicleType type;
+    final int releaseYear;
+    final String brand;
+    final VehicleType type;
     String color;
 
-
-    Vehicle(VehicleType type, double speed, String color, String model) {
+    Vehicle(VehicleType type, String color, String brand, int releaseYear) {
         this.type = type;
-        this.speed = speed;
         this.color = color;
-        this.model = model;
+        this.brand = brand;
+        this.releaseYear = releaseYear;
     }
 
-    public abstract void displayInfo();
+    public void displayInfo() {
+        System.out.print("Brand: " + brand + "," + " Type: " + type + "," + " Release Year: " + releaseYear + "," + " Color: " + color + ",");
+    }
 }
